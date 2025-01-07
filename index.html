@@ -18,9 +18,12 @@
             <p>Precio base: $<span class="precio-inicial"></span> </p>
 
             <p>Cantidad:
-                <span class="cantidad">0</span>
-                <button>+</button>
-                <button>-</button>
+                <span class="cantidad"></span>
+                <button id="add" onclick="
+                // cant = document.querySelector('.cantidad')
+                quantity.innerHTML = Number(quantity.innerHTML) + 1
+                ">+</button>
+                <button id="minus">-</button>
             </p>
         </div>
 
@@ -28,7 +31,7 @@
     </section>
 
     <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total"></span> </p>
+        <p>Total a pagar: $ <span class="valor-total"></span> </p>
     </div>
 
     <script src="./js/index.js">
