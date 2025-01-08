@@ -19,16 +19,8 @@
 
             <p>Cantidad:
                 <span class="cantidad"></span>
-                <button onclick="
-                 let cant = quantity.innerHTML = Number(quantity.innerHTML) + 1
-                 let total = document.querySelector('.valor-total')
-                total.innerHTML = cant * basePrice 
-                ">+</button>
-                <button onclick="
-                 cant = quantity.innerHTML = Number(quantity.innerHTML) - 1
-                 total = document.querySelector('.valor-total')
-                 total.innerHTML = cant * basePrice
-                ">-</button>
+                <button id="add">+</button>
+                <button id="minus">-</button>
             </p>
         </div>
 
@@ -36,7 +28,7 @@
     </section>
 
     <div class="total-section">
-        <p>Total a pagar: $ <span class="valor-total"></span> </p>
+        <p>Total a pagar: <br /> $ <span class="valor-total"></span> </p>
     </div>
 
     <script src="./assets/js/index.js">
