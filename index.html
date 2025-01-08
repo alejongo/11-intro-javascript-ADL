@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafío 1 - JavaScript</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 
 <body>
@@ -20,14 +20,14 @@
             <p>Cantidad:
                 <span class="cantidad"></span>
                 <button onclick="
-                cant = quantity.innerHTML = Number(quantity.innerHTML) + 1
-                total = document.querySelector('.valor-total')
+                 let cant = quantity.innerHTML = Number(quantity.innerHTML) + 1
+                 let total = document.querySelector('.valor-total')
                 total.innerHTML = cant * basePrice 
                 ">+</button>
                 <button onclick="
-                cant = quantity.innerHTML = Number(quantity.innerHTML) - 1
-                total = document.querySelector('.valor-total')
-                total.innerHTML = cant * basePrice
+                 cant = quantity.innerHTML = Number(quantity.innerHTML) - 1
+                 total = document.querySelector('.valor-total')
+                 total.innerHTML = cant * basePrice
                 ">-</button>
             </p>
         </div>
@@ -39,7 +39,7 @@
         <p>Total a pagar: $ <span class="valor-total"></span> </p>
     </div>
 
-    <script src="./js/index.js">
+    <script src="./assets/js/index.js">
 
 
     </script>
