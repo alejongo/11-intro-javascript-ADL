@@ -14,15 +14,24 @@ let sellQuantity = 0
 quantity.innerHTML = sellQuantity
 
 
+
 add.addEventListener('click', () => {
-    quantity.innerHTML = Number(quantity.innerHTML) + 1
-    const total = document.querySelector('.valor-total')
-    total.innerHTML = Number(quantity.innerHTML) * basePrice
+    if (quantity.innerHTML >= 0) {
+        quantity.innerHTML = Number(quantity.innerHTML) + 1
+        const total = document.querySelector('.valor-total')
+        total.innerHTML = Number(quantity.innerHTML) * basePrice
+
+    }
+
 })
 
 
+
 minus.addEventListener('click', () => {
-    quantity.innerHTML = Number(quantity.innerHTML) - 1
-    const total = document.querySelector('.valor-total')
-    total.innerHTML = Number(quantity.innerHTML) * basePrice
+    if (quantity.innerHTML >= 1) {
+        quantity.innerHTML = Number(quantity.innerHTML) - 1
+        const total = document.querySelector('.valor-total')
+        total.innerHTML = Number(quantity.innerHTML) * basePrice
+    }
+
 })
