@@ -16,13 +16,13 @@ quantity.innerHTML = sellQuantity
 
 add.addEventListener('click', () => {
     quantity.innerHTML = Number(quantity.innerHTML) + 1
-    let total = document.querySelector('.valor-total')
+    const total = document.querySelector('.valor-total')
     total.innerHTML = Number(quantity.innerHTML) * basePrice
 })
 
 
 minus.addEventListener('click', () => {
     quantity.innerHTML = Number(quantity.innerHTML) - 1
-    total = document.querySelector('.valor-total')
+    const total = document.querySelector('.valor-total')
     total.innerHTML = Number(quantity.innerHTML) * basePrice
 })
