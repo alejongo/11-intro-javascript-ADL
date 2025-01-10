@@ -13,16 +13,16 @@ price.innerHTML = basePrice
 let sellQuantity = 0
 quantity.innerHTML = sellQuantity
 
-// Increment and Decrement logic
+
 add.addEventListener('click', () => {
-    let cant = quantity.innerHTML = Number(quantity.innerHTML) + 1
+    quantity.innerHTML = Number(quantity.innerHTML) + 1
     let total = document.querySelector('.valor-total')
-    total.innerHTML = cant * basePrice
+    total.innerHTML = Number(quantity.innerHTML) * basePrice
 })
+
 
 minus.addEventListener('click', () => {
-    cant = quantity.innerHTML = Number(quantity.innerHTML) - 1
+    quantity.innerHTML = Number(quantity.innerHTML) - 1
     total = document.querySelector('.valor-total')
-    total.innerHTML = cant * basePrice
+    total.innerHTML = Number(quantity.innerHTML) * basePrice
 })
-
